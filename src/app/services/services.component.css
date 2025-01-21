@@ -1,0 +1,30 @@
+.services {
+    padding: 40px 20px;
+    background: #f8f9fa;
+  }
+  
+  .services h1 {
+    font-size: 2.2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .services ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .services ul li {
+    font-size: 1.1em;
+    color: #555;
+    padding: 10px;
+    background: white;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

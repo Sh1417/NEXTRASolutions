@@ -1,0 +1,106 @@
+/* Home Container */
+.home-container {
+    height: 100vh; /* Full screen */
+    width: 100%;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    height: 100%; /* Occupy full height */
+    background: url('https://cdn.b12.io/client_media/CyM2PPNQ/dc6ff194-d421-11ef-848d-0242ac110002-jpg-hero_image.jpeg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+ 
+
+  /* Overlay for Better Readability */
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for text visibility */
+    padding: 20px; 
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    max-width: 800px;
+  }
+  
+  /* Hero Text */
+  .hero-overlay h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-overlay p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Call-to-Action Buttons */
+  .cta-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .btn {
+    font-size: 1em;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .primary-btn {
+    background: #f39c12;
+    color: white;
+  }
+  
+  .primary-btn:hover {
+    background: #e67e22;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .secondary-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  .secondary-btn:hover {
+    background: white;
+    color: #3498db;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  h1{
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-overlay h1 {
+      font-size: 2.5em;
+    }
+  
+    .hero-overlay p {
+      font-size: 1.1em;
+    }
+  
+    .cta-buttons {
+      flex-direction: column;
+    }
+  }
+  .hero-logo {
+    width: 150px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add spacing below */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%; /* Optional: Makes the logo circular */
+  }

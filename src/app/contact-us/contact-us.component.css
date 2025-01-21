@@ -1,0 +1,136 @@
+/* Contact Us Container */
+.contact-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background: url('https://cdn.b12.io/client_media/CyM2PPNQ/dc6ff194-d421-11ef-848d-0242ac110002-jpg-hero_image.jpeg') no-repeat center center/cover;
+  }
+  
+  /* Contact Card */
+  .contact-card {
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 20px 30px;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .contact-card h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-card p {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .contact-details p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+  }
+  
+  .contact-details i {
+    font-size: 1.2em;
+    color: #3498db;
+  }
+  
+  .contact-details a {
+    text-decoration: none;
+    color: #555;
+  }
+  
+  .contact-details a:hover {
+    color: #3498db;
+  }
+  
+  .social-links a {
+    color: #e4405f; /* Instagram Pink */
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  .social-links a:hover {
+    color: #d5275f;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 20px 30px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .contact-form h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form p {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .contact-form .form-group input:focus,
+  .contact-form .form-group textarea:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .contact-form .form-group.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .contact-form .form-group.checkbox label {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .submit-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #2980b9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-us-container {
+      flex-direction: column;
+    }
+  }
+  

@@ -1,0 +1,74 @@
+/* Full-Screen Background with Blur and Dimming */
+.about-us-container {
+    position: relative;
+    height: 100vh; /* Full screen */
+    width: 100%;
+    overflow: hidden; /* Prevent content overflow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn.b12.io/client_media/CyM2PPNQ/dc6ff194-d421-11ef-848d-0242ac110002-jpg-hero_image.jpeg') no-repeat center center/cover; /* Replace with your image */
+    filter: blur(5px); /* Apply blur */
+    z-index: 1; /* Place it behind the content */
+  }
+  
+  .background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dim the background */
+    z-index: 2; /* Place the dimming overlay above the background */
+  }
+  
+  /* About Us Section Content */
+  .about-us {
+    position: relative; /* To layer it on top of the background */
+    z-index: 3; /* Place content above the background and dimming overlay */
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow around the content */
+    text-align: center; /* Centers the entire section content */
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-us h1 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px; /* Adds space below the paragraph for the image */
+    text-align: justify;
+  }
+  
+  .about-us img {
+    display: block; /* Centers the image horizontally */
+    margin: 20px auto; /* Adds vertical spacing above and below */
+    max-width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a soft shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .about-us img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+  }
+  
+  
